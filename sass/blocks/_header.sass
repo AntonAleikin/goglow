@@ -1,0 +1,46 @@
+.header
+    height: 8.6vh
+    width: 100%
+    position: fixed
+    z-index: 5
+    
+    &_active
+        background: $main_bg
+
+
+.nav
+    height: 8.6vh
+    +flex-between-center
+
+    &__logo
+        font-size: 4.5vh
+        line-height: 4.5vh
+        color: $white_color
+        &-link
+            &:hover
+                color: $white_color
+                text-decoration: none
+
+
+.menu
+    margin: 0
+    padding: 0
+    height: 4.5vh
+    width: 66% //проценты не от всей ширины экрана, а от ширины сетки
+
+    +flex-between-center
+
+    list-style-type: none 
+
+    &__link
+        color: $white_color
+        font-size: 2.15vh
+        line-height: 4.5vh
+        &:hover
+            color: $white_color
+            text-decoration: none
+
+
+.hamburger
+    display: none
+    
