@@ -2,3 +2,22 @@
     display: flex
     justify-content: space-between
     align-items: center
+
+
+// Кнопка со стрелкой на следующую секцию
+=link-to-other-section
+    font-size: 3vh
+        
+    display: inline-block
+    text-decoration: none
+
+    &-text
+        display: inline-block
+    i
+        transform: translateY(0.3vh) //Выравниваем стрелочку (опускаем вниз) 
+    
+    &:hover
+        text-decoration: none
+        transform: translateY(-2px)
+        text-shadow: 0px 2px 2px grey
+        transition: all 0.1s

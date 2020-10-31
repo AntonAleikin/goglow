@@ -1,11 +1,20 @@
 .header
     height: 8.6vh
     width: 100%
-    position: fixed
+    position: absolute
+    top: 0
     z-index: 5
+    transition: all 1s
     
-    &_active
+    &_fixed
+        position: fixed
+        top: 0
+        z-index: 5
         background: $main_bg
+
+        transform: translateY(4px)
+        transform: translateY(-4px)
+        transition: all 1s
 
 
 .nav
@@ -39,6 +48,7 @@
         &:hover
             color: $white_color
             text-decoration: none
+            text-shadow: 0px 0px 8px grey
 
 
 .hamburger

@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    
+
+    <script defer src="js/social-bar.js"></script>
+    <script defer src="js/header_fixed.js"></script>
 </head>
 <body>
     
@@ -33,12 +35,12 @@
 
                 
                 <ul class="menu">
-                    <li><a class="menu__link" href="">Главная</a></li>
-                    <li><a class="menu__link" href="">Обо мне</a></li>
-                    <li><a class="menu__link" href="">Галерея</a></li>
-                    <li><a class="menu__link" href="">Услуги</a></li>
-                    <li><a class="menu__link" href="">Календарь</a></li>
-                    <li><a class="menu__link" href="">Записаться</a></li>
+                    <li><a class="menu__link" href="#home">Главная</a></li>
+                    <li><a class="menu__link" href="#about">Обо мне</a></li>
+                    <li><a class="menu__link" href="#galery">Галерея</a></li>
+                    <li><a class="menu__link" href="#services">Услуги</a></li>
+                    <li><a class="menu__link" href="#calendar">Календарь</a></li>
+                    <li><a class="menu__link" href="#">Записаться</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,15 +48,15 @@
 
 
     <!-- Фиксированный бар соцсетей -->
-    <div_ class="social-bar">
+    <div class="social-bar">
 
         <a class="social-bar__link" href=""><i class="fab fa-instagram"></i></a>
         <a class="social-bar__link" href=""><i class="fab fa-facebook-f"></i></a>
-    </div_>
+    </div>
 
 
     <!-- Секция Главная -->
-    <section class="home-section">
+    <section id="home" class="home-section">
 
         <img class="home-section__lady_png" src="img/home-section__lady_png.png"></img>
 
@@ -81,5 +83,40 @@
             </div>
         </div>
     </section>
+
+
+    <!-- Секция Обо мне -->
+    <section id="about" class="about-section">
+
+        <div class="about-section__header">Обо мне</div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="about-section__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non enim id leo accumsan faucibus. Sed neque leo, viverra id orci a, finibus fermentum elit. Fusce est enim, tristique vitae vulputate vel, sagittis nec leo. 
+                    </div>
+            
+                    <a class="about-section__link" href="#galery">
+                        <div class="about-section__link-text">Мои работы</div>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+
+                <div class="col-md-6">
+
+                    <img class="about-section__lady_png" src="img/about-section__lady_png.png"></img>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Секция галерея -->
+    <section id="galery" class="galery-section">
+        
+    </section>
+
 </body>
 </html>

@@ -11,6 +11,7 @@
     flex-direction: column
 
     &__link
+        transition: all 0.3s 
         font-size: 6vh
         color: $white_color
         &:hover
@@ -18,8 +19,23 @@
             color: $white_color
 
     &::before
+        transition: all 0.3s 
         content: ''
         display: inline-block
         background-color: $white_color
         height: 33vh
         width: 2px
+
+
+// Темный стиль для белого фона
+.social-bar_dark
+    &__link
+        transition: all 0.3s 
+        color: rgba(117, 113, 110, 0.9)
+
+
+        &:hover
+            color: $main
+    &::before
+        transition: all 0.3s 
+        background-color: rgba(117, 113, 110, 0.9)
