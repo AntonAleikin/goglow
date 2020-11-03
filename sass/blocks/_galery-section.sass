@@ -1,0 +1,62 @@
+.galery-section
+    +section-standard
+    background: linear-gradient(243.18deg, #8B8785 2.71%, #69625F 34.96%, #56504E 63.58%)
+
+    &__header
+        +section-header
+        color: $white_color
+    
+    &__galery
+        margin-top: 10vh
+        height: 55vh
+
+        // Каждой колонке внутри контейнера задаем четкую высоту как у картинки
+        &-item
+            height: 25vh
+            &:nth-child(4)
+               margin-top: 5vh
+            &:nth-child(5)
+               margin-top: 5vh
+            &:nth-child(6)
+               margin-top: 5vh
+            
+            &_main
+                height: 55vh 
+
+        &-img
+            height: 25vh
+            transition: all 0.3s ease-out
+            &:hover
+                position: absolute
+                height: 27vh
+                box-shadow: 0 0 10px 2px #8B8785
+                
+            &_main
+               height: 55vh 
+               transition: all 0.3s ease-out
+               &:hover
+                   position: absolute
+                   height: 57vh
+                   box-shadow: 0 0 10px 2px #8B8785
+
+    &__links-wrapper
+        margin-top: 5.3vh
+        +flex-between-center
+        
+    &__social
+        color: $white_color
+        &-link
+            color: $white_color
+            &:hover
+                color: $white_color
+                text-decoration: none
+                text-shadow: 0px 0px 10px grey
+
+    &__link
+        +link-to-other-section
+        color: $white_color
+        &:hover
+            color: $white_color
+
+.container_nopadding
+    padding: 0

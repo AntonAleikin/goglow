@@ -1,6 +1,6 @@
 function changeColor () {
 
-    if (window.matchMedia('(min-width: 992px)').matches) {
+    if (window.matchMedia("(min-width: 768px)").matches) {
 
         const socialBar = document.querySelector('.social-bar'),
         socialBarLink = socialBar.querySelectorAll('.social-bar__link');

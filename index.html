@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
-    <script defer src="js/social-bar.js"></script>
-    <script defer src="js/header_fixed.js"></script>
+    <script defer src="js/modules/social-bar.js"></script>
+    <script defer src="js/modules/header_fixed.js"></script>
 </head>
 <body>
     
@@ -55,7 +55,7 @@
     </div>
 
 
-    <!-- Секция Главная -->
+    <!-- Главная -->
     <section id="home" class="home-section">
 
         <img class="home-section__lady_png" src="img/home-section__lady_png.png"></img>
@@ -76,7 +76,7 @@
     
                         <a class="home-section__promo-link" href="#about">
                             <div class="home-section__promo-link-text">Узнать больше</div>
-                            <i class="fas fa-chevron-down"></i>
+                            <i class="fas fa-chevron-down pointer"></i>
                         </a>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
     </section>
 
 
-    <!-- Секция Обо мне -->
+    <!-- Обо мне -->
     <section id="about" class="about-section">
 
         <div class="about-section__header">Обо мне</div>
@@ -113,9 +113,116 @@
     </section>
 
 
-    <!-- Секция галерея -->
+    <!-- Галерея -->
     <section id="galery" class="galery-section">
         
+        <div class="galery-section__header">Галерея</div>
+
+
+        <div class="galery-section__galery">
+
+            <div class="container">
+                <div class="row">
+
+                    <!-- Секция с мелкими фото -->
+                    <div class="col-md-6 offset-md-1">
+
+                        <div class="container container_nopadding">
+                            <div class="row">
+
+                                <div class="col-md-4 galery-section__galery-item">
+                        
+                                    <a class="galery-section__galery-link" href="galery/pic2.jpg">
+            
+                                        <img class="galery-section__galery-img" src="galery/pic2.jpg" alt="">
+                                    </a>
+                                </div>
+            
+                                <div class="col-md-4 galery-section__galery-item">
+                                    
+                                    <a class="galery-section__galery-link" href="galery/pic1.jpg">
+            
+                                        <img class="galery-section__galery-img" src="galery/pic1.jpg" alt="">
+                                    </a>
+                                </div>
+            
+                                <div class="col-md-4 galery-section__galery-item">
+                                    
+                                    <a class="galery-section__galery-link" href="galery/pic4.jpg">
+            
+                                        <img class="galery-section__galery-img" src="galery/pic4.jpg" alt="">
+                                    </a>
+                                </div>
+            
+                                <div class="col-md-4 galery-section__galery-item">
+                                    
+                                    <a class="galery-section__galery-link" href="galery/pic5.jpg">
+            
+                                        <img class="galery-section__galery-img" src="galery/pic5.jpg" alt="">
+                                    </a>
+                                </div>
+
+
+                                <div class="col-md-4 galery-section__galery-item">
+                                    
+                                    <a class="galery-section__galery-link" href="galery/pic6.jpg">
+            
+                                        <img class="galery-section__galery-img" src="galery/pic6.jpg" alt="">
+                                    </a>
+                                </div>
+            
+                                <div class="col-md-4 galery-section__galery-item">
+                                    
+                                    <a class="galery-section__galery-link" href="galery/pic7.jpg">
+            
+                                        <img class="galery-section__galery-img" src="galery/pic7.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Секция с крупным фото -->
+                    <div class="col-md-3 galery-section__galery-item_main">
+
+                        <a class="galery-section__galery-link" href="galery/pic3.jpg">
+
+                            <img class="galery-section__galery-img_main" src="galery/pic3.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <!-- Правая секция с портретом -->
+                    <!-- <div class="col-md-4">
+
+                        <a class="galery-section__galery-link" href="galery/pic0.jpg">
+                
+                            <img class="galery-section__galery-img_main" src="galery/pic0.jpg" alt="">
+                        </a>
+                    </div> -->
+                </div>
+
+
+                <!-- Ссылки на интсаграм и Услуги -->
+                <div class="row">
+                    <div class="col-md-9 offset-md-1">
+
+                        <div class="galery-section__links-wrapper">
+
+                            <div class="galery-section__social"> Больше моих работ в 
+                                <a class="galery-section__social-link" href="">Instagram</a>
+                            </div>
+                        
+                        
+                            <a class="galery-section__link" href="#services">
+                                <div class="galery-section__link-text">Мои Услуги</div>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 </body>
