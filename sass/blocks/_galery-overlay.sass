@@ -1,0 +1,58 @@
+.galery-overlay
+    position: fixed
+    z-index: 10
+    top: 0
+    height: 100vh
+    width: 100%
+    background-color: rgba(0,0,0, .8)
+
+    &-close
+        position: absolute
+        top: 6.25vh
+        right: 6.25vh
+        transform: translateY(-50%)
+        font-size: 6vh
+        color: $white_color
+        cursor: pointer
+
+    &-wrapper
+        position: absolute
+        top: 12.5vh
+        left: 50%
+        transform: translateX(-50%)
+        height: 75vh // Высота фото
+    
+    &-pointer
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        font-size: 10vh
+        color: white
+        cursor: pointer
+        text-shadow: -2px 0px 16px black
+        &-prev
+            left: -20%
+            &_not-active
+                color: grey
+        &-next
+            right: -20%
+            &_not-active
+                color: grey
+
+
+// Окошко, где показывается слайд
+.galery-slider-wrapper
+    overflow: hidden // Скрываем все, что выходит за рамки области видимости
+    box-shadow: 0 0 18px 4px black
+
+
+// Полоска со всеми фотками
+.galery-slider-inner
+    display: flex
+    align-items: center
+    //transition: all 0.3s ease-out
+
+
+.galery-slide-img
+    height: 75vh
+        
