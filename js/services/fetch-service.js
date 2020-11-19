@@ -1,4 +1,4 @@
-export default async function fetchservice(header, myBody) {
+export default async function fetchService(header, myBody) {
 
     if (myBody === undefined) {
 

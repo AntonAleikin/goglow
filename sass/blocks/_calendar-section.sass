@@ -1,0 +1,102 @@
+.calendar-section
+    +section-standard
+    background: linear-gradient(243.18deg, #B0ADAC 2.25%, #807A78 34.14%, #706B69 58.29%)
+
+    &__header
+        +section-header
+        color: $white_color
+
+    &__text
+        margin-top: 4.4vh
+        font-size: 3.3vh //22px
+        text-align: center
+        color: $white_color
+
+// Календарь
+.calendar
+    margin-top: 6vh
+    height: 51vh
+
+    &__month
+        font-size: 4vh
+        color: $white_color
+
+    // Слайдер
+    &-slider-wrapper
+        margin-top: 1.4vh
+        height: 51vh
+        overflow: hidden 
+    &-slider-inner
+        display: flex
+        align-items: center 
+        //transition: all 0.3s ease-out
+
+
+    // Открытый день
+    &__day
+        height: 51vh
+
+
+    // Все дни
+    &__days
+       height: 51vh
+       display: flex
+       flex-wrap: wrap
+
+       &-item
+        position: relative
+        padding: 0 15px
+
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+        height: 8.5vh
+        width: 6.75vw
+        color: $white_color  
+        cursor: pointer  
+
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            bottom: 0
+            left: 0
+            height: 2px
+            width: 100%
+            background-color: $white_color
+
+        &-active
+            background-color: #B8B1AF
+            .calendar__days-item-name
+                color: $white_color
+
+        &-hover
+            &:hover
+                background-color: #5D5957
+
+        // Класс, который скрывает неактивные дни месяца calendar__days-item-none
+        &-none 
+            cursor: initial
+            &::before
+                display: none
+                
+            .calendar__days-item-name
+                display: none
+            .calendar__days-item-date
+                display: none
+
+
+        &-name
+            font-size: 3vh
+            line-height: 3vh
+            color: #d0d0d0
+            
+        &-date
+            font-size: 4.2vh
+            line-height: 4.2vh
+            text-align: right
+
+
+
+
